@@ -1,0 +1,21 @@
+cl-oracle - Price Oracle Framework
+===================================
+
+This project contains code extracted and adapted from CLPIC
+(Common Lisp P2P Intellectual Property Chain).
+
+Original source files:
+- src/oracle/package.lisp
+- src/oracle/core/types.lisp
+- src/oracle/feeds/price.lisp
+- src/oracle/aggregation/median.lisp
+
+The code has been refactored into a standalone library with:
+- No external dependencies (pure Common Lisp)
+- Simplified API focused on price feed aggregation
+- Removed blockchain-specific functionality
+- Removed cryptographic signing requirements
+
+For the full oracle network implementation including VRF,
+attestations, staking, and blockchain integration, see the
+original CLPIC project.

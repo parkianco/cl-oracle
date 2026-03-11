@@ -1,0 +1,24 @@
+# ASDF/SBCL compiled files
+*.fasl
+*.lx64fsl
+*.dx64fsl
+*.wx64fsl
+
+# Common Lisp cache
+~/.cache/common-lisp/
+
+# Editor backups
+*~
+\#*\#
+.\#*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
