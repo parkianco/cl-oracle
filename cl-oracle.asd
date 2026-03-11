@@ -3,7 +3,7 @@
 
 (asdf:defsystem #:cl-oracle
   :description "Price Oracle Framework - Multi-source aggregation with outlier detection"
-  :author "CLPIC Project"
+  :author "Parkian Company LLC"
   :license "MIT"
   :version "0.1.0"
   :serial t
