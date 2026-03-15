@@ -6,18 +6,16 @@
 
 (asdf:defsystem #:cl-oracle
   :description "Price Oracle Framework - Multi-source aggregation with outlier detection"
-  :author "Parkian Company LLC"
-  :license "MIT"
+  :author "Park Ian Co"
+  :license "Apache-2.0"
   :version "0.1.0"
   :serial t
   :components ((:file "package")
                (:module "src"
-                :serial t
-                :components ((:file "util")
-                             (:file "feed")
-                             (:file "aggregator")
-                             (:file "validator")
-                             (:file "oracle")))))
+                :components ((:file "package")
+                             (:file "conditions" :depends-on ("package"))
+                             (:file "types" :depends-on ("package"))
+                             (:file "cl-oracle" :depends-on ("package" "conditions" "types")))))))
 
 (asdf:defsystem #:cl-oracle/test
   :description "Tests for cl-oracle"
