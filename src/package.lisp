@@ -9,7 +9,11 @@
 (defpackage #:cl-oracle
   (:use #:cl)
   (:export
-   #:with-oracle-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-oracle-timing
    #:oracle-batch-process
    #:oracle-health-check;; ==========================================================================
    ;; Core Types
